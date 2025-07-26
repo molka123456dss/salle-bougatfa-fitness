@@ -1,0 +1,96 @@
+/* Styles personnalisés pour Bougatfa Fitness */
+.hero-gradient {
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 50%, #7f1d1d 100%);
+}
+
+.sport-card {
+  transition: all 0.3s ease;
+}
+
+.sport-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.music-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Styles pour les cartes de réseaux sociaux */
+.social-card {
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation pour les icônes d'objectifs */
+.objective-icon {
+  transition: all 0.3s ease;
+}
+
+.objective-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Styles pour les badges d'entraîneurs */
+.trainer-badge {
+  transition: all 0.3s ease;
+}
+
+.trainer-badge:hover {
+  transform: scale(1.05);
+}
+
+/* Animation pour les icônes de navigation sociale */
+nav .fab {
+  transition: all 0.3s ease;
+}
+
+nav .fab:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive pour les cartes sociales */
+@media (max-width: 640px) {
+  .social-card {
+    padding: 1rem;
+  }
+  
+  .social-card i {
+    font-size: 1.5rem;
+  }
+}
+
